@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 import 'package:task_manager/screens/task_screen.dart';
-
 import 'screens/login_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/register_screen.dart';
