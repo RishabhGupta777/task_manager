@@ -25,7 +25,7 @@ class AuthService {
     return data;
   }
 
-  ///Register
+  ///Register the users
   Future register(String name,String email,String password) async {
     return await _api.post("user/register",{
       "name":name,
