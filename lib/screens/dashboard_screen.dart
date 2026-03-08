@@ -3,8 +3,6 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import '../providers/task_provider.dart';
 import '../services/auth_service.dart';
-import '../widgets/button.dart';
-import 'task_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -59,9 +57,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  _buildStatCard("Total Tasks", provider.totalTasks.toString(), Icons.list_alt, Colors.indigo),
-                  _buildStatCard("Completed", provider.completedTasks.toString(), Icons.check_circle_outline, Colors.green),
                   _buildStatCard("Pending", provider.pendingTasks.toString(), Icons.access_time, Colors.orange),
+                  _buildStatCard("Completed", provider.completedTasks.toString(), Icons.check_circle_outline, Colors.green),
+                  _buildStatCard("Total Tasks", provider.totalTasks.toString(), Icons.list_alt, Colors.indigo),
                 ],
               ),
             ),

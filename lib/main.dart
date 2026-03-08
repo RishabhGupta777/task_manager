@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     String? token = prefs.getString("token");
 
     if (token != null && token.isNotEmpty) {
-      return true; // user already logged in
+      return true; // user pahle se hi logged in ho to
     }
     return false;
   }
@@ -52,9 +52,9 @@ class MyApp extends StatelessWidget {
             }
 
             if (snapshot.data == true) {
-              return DashboardScreen(); // token exists
+              return DashboardScreen(); // token exists kre tab
             } else {
-              return LoginScreen(); // no token
+              return LoginScreen(); //agar no token ho to
             }
           },
         ),

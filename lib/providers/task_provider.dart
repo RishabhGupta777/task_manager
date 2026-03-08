@@ -101,7 +101,7 @@ class TaskProvider with ChangeNotifier {
   }
 
 
-  /// DASHBOARD STATS
+  /// DASHBOARD
 
   int get totalTasks => tasks.length;
 

@@ -35,7 +35,7 @@ class TRoundedContainer extends StatelessWidget {
         color:backgroundColor ,
         border:showBorder ? Border.all(color:borderColor  ?? CupertinoColors.white) : null,
       ),
-      clipBehavior: Clip.antiAlias, // Ensures child respects borderRadius
+      clipBehavior: Clip.antiAlias,
       child :child,
     );
   }

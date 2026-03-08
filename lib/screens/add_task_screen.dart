@@ -88,7 +88,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: const BorderSide(color: Color(0xFF4F52E1), width: 2), // The blue focus line
+          borderSide: const BorderSide(color: Color(0xFF4F52E1), width: 2),
         ),
       ),
     );
